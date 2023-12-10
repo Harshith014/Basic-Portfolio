@@ -1,0 +1,361 @@
+html {
+  scroll-behavior: smooth;
+}
+.plan {
+  width: 87vw;
+  margin: 6px 5px;
+}
+.plan img {
+  height: 658px;
+  width: 699px;
+  margin-top: 20px;
+}
+p {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
+}
+.text-container {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills {
+  margin-bottom: 20px;
+}
+.skills img {
+  height: 90px;
+}
+.skillsList {
+  border-radius: 20px;
+  border: 2px solid #4e3894;
+  margin-top: 45px;
+  background: #190b3c;
+  height: 240px;
+  padding: 10px 0px;
+  font-family: emoji;
+  cursor: pointer;
+}
+.icon-card {
+  background-color: grey;
+  border-radius: 11px;
+  padding: 7px;
+  margin: 10px 24px;
+}
+
+.high {
+  color: chocolate;
+  font-weight: 900;
+}
+.ss h1 {
+  font-family: emoji;
+}
+
+.ss {
+  border: 2px solid #412c41;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 40px;
+  font-weight: 100;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: radial-gradient(#46466a, #1f1013);
+  -webkit-animation: fadeIn 1 1s ease-out;
+  -moz-animation: fadeIn 1 1s ease-out;
+  -o-animation: fadeIn 1 1s ease-out;
+  animation: fadeIn 1 1s ease-out;
+}
+
+.ss::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%; /* Set to 100% to prevent going out of width */
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #1f1013 20%,
+    #393347 50%,
+    #1f1013 80%,
+    transparent 100%
+  );
+  animation: slide 5s linear; /* Adjusted duration */
+}
+
+@keyframes slide {
+  0% {
+    left: 100%; /* Start from the right edge */
+  }
+  100% {
+    left: -100%; /* Move to the left edge */
+  }
+}
+.form-label {
+  color: aliceblue;
+  font-size: large;
+}
+.contact {
+  margin-top: 45px;
+  padding: 18px 0px;
+  border: 2px solid silver;
+  background: linear-gradient(175deg, #524d4d, transparent);
+  border-radius: 20px;
+  font-family: emoji;
+}
+form {
+  /* border: 2px solid silver; */
+  width: 47%;
+  /* overflow: hidden; */
+  margin: auto;
+}
+.nav-link {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: larger;
+}
+.nav-item {
+  padding: 0px 30px;
+}
+footer .nav-item {
+  padding: 0px;
+}
+footer .nav-link {
+  font-size: medium;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.navbar {
+  border-radius: 30px;
+  margin-top: 10px;
+  background: #593eae;
+}
+.effect {
+  animation: typing 2s steps(13) infinite alternate,
+    blink 800ms steps(13) infinite normal;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid white;
+  color: #c995ef;
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+.a {
+  margin-top: 12px;
+}
+.b-divider {
+  margin-top: 19px;
+  border: 1px solid papayawhip;
+}
+hr {
+  margin: 15px auto;
+  width: 52%;
+  color: white;
+  opacity: 1;
+}
+
+@media (max-width: 575.98px) {
+  @keyframes typingMob {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  .card-text {
+    margin-bottom: 0;
+    padding: 0px 0px !important;
+    font-size: small !important;
+  }
+  .effect {
+    animation: typingMob 2s steps(13) infinite alternate,
+      blink 800ms steps(13) infinite normal !important;
+  }
+  .plan {
+    flex-direction: column-reverse;
+  }
+  .text-container {
+    height: 165px;
+    font-size: larger;
+  }
+  .plan img {
+    width: 100% !important;
+    height: auto;
+  }
+  .ss p {
+    font-size: medium !important;
+  }
+  .high {
+    font-weight: 900;
+  }
+  .skillsList {
+    height: auto;
+    text-align: center;
+  }
+  .skills img {
+    height: 70px !important;
+  }
+  .form-label {
+    font-size: smaller !important;
+  }
+  .form-control {
+    padding: 3px 2px;
+    height: 25px;
+    width: 180px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .plan {
+    flex-direction: column-reverse;
+  }
+  .text-container {
+    height: 165px;
+    font-size: larger;
+  }
+  .plan img {
+    width: 100%;
+    height: auto;
+  }
+  .ss p {
+    font-size: medium !important;
+  }
+  .high {
+    font-weight: 900;
+  }
+  .skillsList {
+    height: auto;
+    text-align: center;
+  }
+  .skills img {
+    height: 70px;
+  }
+  .form-label {
+    font-size: smaller;
+  }
+  .form-control {
+    padding: 3px 2px;
+    height: 25px;
+    width: 180px;
+  }
+}
+@media (max-width: 991.98px) {
+  @keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 40%;
+    }
+  }
+  .effect {
+    animation: typing 2s steps(13) infinite alternate,
+      blink 800ms steps(13) infinite normal;
+  }
+  .plan {
+    flex-direction: column-reverse;
+  }
+  .text-container {
+    height: 165px;
+    font-size: larger;
+  }
+  .plan img {
+    width: 100%;
+    height: auto;
+  }
+  .ss p {
+    font-size: large !important;
+  }
+  .high {
+    font-weight: 900;
+  }
+  .skillsList {
+    height: auto;
+    text-align: center;
+  }
+  .skills img {
+    height: 70px;
+  }
+  .form-label {
+    font-size: medium;
+  }
+  .form-control {
+    padding: 3px 2px;
+    height: 25px;
+    width: 325px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .text-container {
+    font-size: larger;
+  }
+  .plan img {
+    width: 595px;
+  }
+  .high {
+    font-weight: 900;
+  }
+  .skillsList {
+    height: auto;
+    text-align: center;
+  }
+  .skills img {
+    height: 115px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .skills img {
+    height: 120px;
+  }
+  .skillsList {
+    height: auto;
+    text-align: center;
+  }
+}
+.container-art {
+    border: 2px solid white;
+    margin-top: 45px;
+    border-radius: 20px;
+}
+.container-art h1 {
+  font-family: emoji;
+}
+.col {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.card {
+  width: 63%;
+  transition: 1.2s;
+}
+.card:hover {
+  transform: scale(1.5);
+}
+.card-body{
+  background: #23202c;
+  font-family: emoji;
+}
