@@ -86,7 +86,7 @@ p {
     #1f1013 80%,
     transparent 100%
   );
-  animation: slide 5s linear infinite; /* Adjusted duration */
+  animation: slide 5s linear; /* Adjusted duration */
 }
 
 @keyframes slide {
